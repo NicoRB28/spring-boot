@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Enviar parametros de la ruta</title>
+</head>
+<body>
+	<ul>
+		<li><a th:href="@{/variables/string/}+'hola Alfred'">/variables/string/hola Alfred</a></li>
+		<li><a th:href="@{/variables/string/}+'Hasta luego Alfred'">/variables/string/hasta luego Alfred</a></li>
+		<li><a th:href="@{/variables/string/}+'hola Alfred'+ '/'+ 28">/variables/string/hola Alfred/28</a></li>
+	</ul>
+</body>
+</html>

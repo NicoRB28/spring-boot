@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+<ul>
+	<li><a th:href="@{/params/string(texto='Hola mundo')}">/params/string?texto=hola mundo</a></li>
+	<li><a th:href="@{/params/string(texto='que tal')}">/params/string?texto=que tal</a></li>
+	<li><a th:href="@{/params/mix-params(saludo='que tal', numero=28)}">/params/mix-params?texto=que tal&numero=28</a></li>
+	<li><a th:href="@{/params/mix-params-request(saludo='que tal', numero=28)}">/params/mix-params-request?texto=que tal&numero=28</a></li>
+</ul>
+</body>
+</html>
